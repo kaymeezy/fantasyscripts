@@ -1,1 +1,1 @@
-# fnatasyscripts
+# fantasyscripts
