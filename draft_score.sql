@@ -13,7 +13,10 @@ SELECT
 (GP / (SELECT MAX(GP) FROM fantasy.draft_metrics)) * 0.1
 +
 (PFP * 0.05)
++
+(1 - ((player_rank-1) / (SELECT MAX(player_rank) FROM fantasy.draft_metrics))) * 0.1
 AS SCORE
+
 FROM fantasy.draft_metrics
 
 ORDER BY SCORE DESC
