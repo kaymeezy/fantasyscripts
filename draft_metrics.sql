@@ -5,7 +5,7 @@ b.FPTS as wkly_fpts,
 b.wkly_cnst as wkly_cnst,
 b.wkly_gp,
 c.PFP,
-d.Rank
+d.Rank AS player_rank
 FROM season_cnst a
 LEFT JOIN wkly_cnst b
 ON a.playerId = b.playerId
