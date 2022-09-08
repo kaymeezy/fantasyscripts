@@ -1,6 +1,10 @@
 CREATE TABLE fantasy.draft_metrics AS (
 SELECT
-a.*,
+a.playerId as playerId,
+a.name as name,
+a.season_cnst / a.FPTS AS season_cnst,
+a.GP AS GP,
+a.FPTS as FPTS,
 b.FPTS as wkly_fpts,
 b.wkly_cnst as wkly_cnst,
 b.wkly_gp,
