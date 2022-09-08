@@ -3,9 +3,9 @@ SELECT
 '2021' AS SEASON,
 seas.playerId,
 seas.name,
-seas.seas_fpts AS seas_pr,
-wkly.wkly_fpts AS wkly_pr,
-wkly.wkly_cnst AS cnst_pr
+seas.seas_fpts AS seas_act,
+wkly.wkly_fpts AS wkly_act,
+wkly.wkly_cnst AS cnst_act
 FROM
 	(
 	SELECT
@@ -57,9 +57,9 @@ SELECT
 '2020' AS SEASON,
 seas.playerId,
 seas.name,
-seas.seas_fpts AS seas_pr,
-wkly.wkly_fpts AS wkly_pr,
-wkly.wkly_cnst AS cnst_pr
+seas.seas_fpts AS seas_act,
+wkly.wkly_fpts AS wkly_act,
+wkly.wkly_cnst AS cnst_act
 FROM
 	(
 	SELECT
@@ -111,9 +111,9 @@ SELECT
 '2019' AS SEASON,
 seas.playerId,
 seas.name,
-seas.seas_fpts AS seas_pr,
-wkly.wkly_fpts AS wkly_pr,
-wkly.wkly_cnst AS cnst_pr
+seas.seas_fpts AS seas_act,
+wkly.wkly_fpts AS wkly_act,
+wkly.wkly_cnst AS cnst_act
 FROM
 	(
 	SELECT
